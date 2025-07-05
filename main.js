@@ -34,7 +34,7 @@ const lineupCron = async (token) => {
       console.log(JSON.stringify(response.data));
     })
     .catch((error) => {
-      console.log(error);
+      console.log("Error in lineupCron:", error.message);
     });
 };
 
