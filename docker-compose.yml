@@ -1,0 +1,9 @@
+version: '3.8'  # O la versión que estés usando
+services:
+  lineups:
+    build:
+      context: "/home/chavez/scripts/sensei-lineups"
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"  # Ajusta según tus necesidades
+
