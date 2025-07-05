@@ -31,6 +31,7 @@ const lineupCron = async (token) => {
   axios
     .request(config)
     .then((response) => {
+      console.log("Lineup cron executed successfully.");
       console.log(JSON.stringify(response.data));
     })
     .catch((error) => {
